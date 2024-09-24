@@ -1,3 +1,9 @@
+<!-- Background
+
+Color, Gradirents, Position, Size, Attachment, Repeat, Image, Background-Blend- Mode
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,60 +15,68 @@
         * {
             margin: 0;
             padding: 0;
-        }
 
-        .box {
-            /* height: 500px;
-            width: 500px;
-            border: solid 2px black; */
-            /* background-color: red; */
-            /* background: linear-gradient(to top , red , aqua , green); */
-            /* background: radial-gradient( red , green , aqua , black , purple  ); */
-            /* background: conic-gradient( red , green , aqua , black , purple  ); */
-        }
-
-
-        .box {
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.36), rgba(190, 2, 2, 0.439)), url(./images/3.jpg);
-            /* background-image: url(./images/3.jpg); */
-            background-size: cover;
-            height: 100vh;
-            background-repeat: no-repeat;
-        }
-
-        .section-1 {
-            width: 300px;
-            border: solid 2px white;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.279);
-            box-shadow: 0px 0px 10px 10px black;
-            padding: 30px;
         }
 
         .main {
-            padding-top: 200px;
+            height: 100vh;
+
+
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.409)), url(./images/3.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0% 0%, 100% 0, 100% 76%, 52% 100%, 0 79%);
+
+            /* background: linear-gradient(to right , red , aqua ) */
+            /* background: radial-gradient( red , aqua , yellow , purple , orange) */
+            /* background: conic-gradient( red , aqua , yellow , purple , orange) */
+
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .child {
+            height: 300px;
+            width: 300px;
+            border: solid 1px white;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 30px 50px 50px 50px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 2px 2px white;
+
+            background-image: url(./images/3.jpeg);
+            background-position: center;
+            background-size: cover;
+            /* background-color: rgba(255, 255, 255, 0.348); */
+        }
+
+        .parent {
+            padding-top: 100px;
+        }
+
+
+        input {
+            border: none;
+            border-bottom: solid 3px white;
+            background: transparent;
+            outline: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="box">
-
-
-        <div class="main">'
-
-            <div class="section-1">
-                FIRST NAME : -
-                <input type="text">
-                FIRST NAME : -
-                <input type="text"> FIRST NAME : -
-                <input type="text"> FIRST NAME : -
-                <input type="text"> FIRST NAME : -
-                <input type="text">
+    <div class="main">
+        <div class="parent">
+            <div class="child">
+                FIRST NAME : <input type="text">
             </div>
         </div>
-
     </div>
+
 </body>
 
 </html>

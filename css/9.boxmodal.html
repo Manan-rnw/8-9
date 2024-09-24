@@ -1,0 +1,80 @@
+<!-- Box Modal
+Width, Height, Background-Color
+Content, Padding, Border, Margin
+
+
+Box-Sizing
+Display Property
+Border, Border-Radius
+Block, Inline, Inline-Block, None -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            /* border: outset 10px black; */
+            /* border-top: solid 2px black;
+            border-bottom: double 3px red;
+            border-left: dashed 4px orange;
+            border-right: dotted 3px black; */
+            /* background-color: red; */
+            /* border: solid 10px; */
+            /* border-image: linear-gradient(to right , red , aqua , orange)5; */
+            /* border-image: radial-gradient( red , aqua , orange , yellow)5; */
+            /* border-image: conic-gradient( red , aqua , orange , yellow)5; */
+            /* border-image: url(./images/2.jpeg)1; */
+        }
+
+        h1 {
+            background-color: red;
+            display: inline;
+        }
+
+        span {
+            background-color: yellow;
+            display: block;
+        }
+
+        p {
+            display: none;
+        }
+
+        @media screen and (max-width : 767px) {
+
+            p {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box"></div> -->
+
+
+    <h1>HELLO</h1>
+
+    <span>I AM INLINE</span>
+
+
+    <P>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur inventore temporibus ea. Quos quas ut
+        culpa sunt itaque facilis velit?
+    </P>
+</body>
+
+</html>

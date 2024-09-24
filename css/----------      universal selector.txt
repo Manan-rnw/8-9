@@ -1,0 +1,32 @@
+*----------      universal selector
+.                class
+#                id 
+h1,h2,h3,h4      group selector 
+h1               element
+
+
+combinator 
+
+div p 
+div + p 
+div > p
+div ~ p 
+
+
+pseudo  class and element
+
+::first-letter 
+::first-line 
+::selection 
+::before 
+::after
+::marker
+
+
+:hover 
+:first-child 
+:nth-child 
+:active 
+:focus 
+:visited 
+:link

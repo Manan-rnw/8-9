@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 100vh;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box-1 {
+            height: 100px;
+            width: 100px;
+            border: solid 2px white;
+            background-color: red;
+            position: absolute;
+            top: 200px;
+            z-index: 15;
+        }
+
+        .box-2 {
+            height: 100px;
+            width: 100px;
+            border: solid 2px white;
+            background-color: green;
+            position: absolute;
+            top: 250px;
+            z-index: 1;
+        }
+
+        .box-3 {
+            height: 100px;
+            width: 100px;
+            border: solid 2px white;
+            background-color: purple;
+            position: absolute;
+            top: 300px;
+        }
+
+        .circle {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            border-radius: 50%;
+            left: -130px;
+            top: -130px;
+        }
+
+        .circle-1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            border-radius: 50%;
+            top: -130px;
+            right: -130px;
+        }
+
+        .main-2 {
+            display: flex;
+            gap: 20px;
+            height: 220px;
+            width: 80%;
+            margin: 0 auto;
+            overflow: scroll;
+        }
+
+        .container {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div> -->
+
+        <img src="./images/1.jpeg" class="circle" alt="">
+        <div class="circle-1"></div>
+    </div>
+
+    <div class="container">
+
+
+        <div class="main-2">
+            <img src="./images/1.jpeg" alt="" height="200px">
+            <img src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px"> <img
+                src="./images/1.jpeg" alt="" height="200px"> <img src="./images/1.jpeg" alt="" height="200px">
+        </div>
+    </div>
+</body>
+
+</html>

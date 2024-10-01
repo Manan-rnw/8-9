@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <STYLE>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+        }
+
+        .link-parent {
+            display: flex;
+            gap: 30px;
+        }
+
+        .hide {
+            display: none;
+
+        }
+
+        .show:hover .hide {
+            display: flex;
+            justify-content: space-between;
+
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            /* height: 300px; */
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .link a {
+            margin-left: 30px;
+        }
+
+        .box a {
+            display: block;
+            font-size: smaller;
+            margin: 8px;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="./images/skybag.avif" alt="" height="30px">
+        </div>
+
+        <div class="link-parent">
+
+            <div class="link">
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+            </div>
+
+            <div class="show">
+                <a href="#">HOVER</a>
+
+                <div class="hide">
+
+                    <div class="box">
+                        <a href="#">HOME1</a>
+                        <a href="#">HOME1</a>
+                        <a href="#">HOME1</a>
+                        <a href="#">HOME1</a>
+                        <a href="#">HOME1</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="#">HOME 2</a>
+                        <a href="#">HOME 2</a>
+                        <a href="#">HOME 2</a>
+                        <a href="#">HOME 2</a>
+                        <a href="#">HOME 2</a>
+                    </div>
+
+
+                    <div class="box">
+                        <a href="#">HOME 3</a>
+                        <a href="#">HOME 3</a>
+                        <a href="#">HOME 3</a>
+                        <a href="#">HOME 3</a>
+                        <a href="#">HOME 3</a>
+                    </div>
+
+
+                    <div class="box">
+                        <a href="#">HOME 4</a>
+                        <a href="#">HOME 4</a>
+                        <a href="#">HOME 4</a>
+                        <a href="#">HOME 4</a>
+                        <a href="#">HOME 4</a>
+                    </div>
+
+                    <div>
+                        <img src="./images/sky2.webp" alt="" height="200pxs">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

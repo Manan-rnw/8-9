@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            height: 20px;
+            padding: 5px;
+            display: flex;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 50px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .hide a {
+            margin-left: 0px;
+        }
+
+        .show {
+            display: none;
+           
+        }
+
+       .show:hover .hide {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            width: 100%;
+            background-color: red;
+        }
+
+        @media screen and (max-width : 767px) {
+            body {
+                background-color: green;
+            }
+
+            .show {
+              
+                display: block;
+                width: 100%;
+                position: relative;
+           
+            }
+
+            .header {
+                display: none;
+            }
+
+            .fa-solid {
+                position: absolute;
+               right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+        </div>
+
+        <div class="show">
+           <a href="#">
+              <i class="fa-solid fa-bars"></i>
+           </a>
+
+            <div class="hide">
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

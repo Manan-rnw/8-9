@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            height: 300px;
+            width: 300px;
+            border: solid 2px black;
+        }
+
+        .one {
+            background-image: url(../css/images/1.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .two h1 {
+            display: none;
+        }
+
+        @media screen and (min-width:200px) and (max-width:767px) {
+            .parent {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                border: solid 2px green;
+            }
+
+            .one {
+                background-image: url(../css/images/2.jpeg);
+            }
+
+            .two h1 {
+                display: block;
+            }
+        }
+
+
+        /* @media screen and (min-width:200px) and (max-width:500px) {
+             body {
+                background-color: red;
+             }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="card"></div>
+        <div class="card one"></div>
+        <div class="card two">
+            <h1> HELLLO</h1>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2" cellpadding="10">
+        <tr>
+            <td>MATHS</td>
+            <td id="sub-1"> </td>
+        </tr>
+
+        <tr>
+            <td>SCIENCE</td>
+            <td id="sub-2"></td>
+        </tr>
+
+        <tr>
+            <td>ENGLISH</td>
+            <td id="sub-3"></td>
+        </tr>
+
+        <tr>
+            <td>GUJARATI</td>
+            <td id="sub-4"></td>
+        </tr>
+
+        <tr>
+            <td>TOTAL</td>
+            <td id="tot"></td>
+        </tr>
+
+        <tr>
+            <td>PERCENTAGE</td>
+            <td id="per"></td>
+        </tr>
+    </table>
+
+    
+
+
+    <script>
+        let a = document.getElementById("sub-1").innerHTML = 43;
+        let b = document.getElementById("sub-2").innerHTML = 13;
+                document.getElementById("sub-2").style.color = "red";
+        let c = document.getElementById("sub-3").innerHTML = 58;
+        let d = document.getElementById("sub-4").innerHTML = 72;
+
+        total = a + b + c + d;
+
+        document.getElementById("tot").innerHTML = total;
+
+
+        document.getElementById("per").innerHTML = total * 100 / 400 + "%";
+
+
+    </script>
+</body>
+
+</html>

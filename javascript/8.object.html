@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <button onclick="hello()">CLICK ME</button>
+
+    <script>
+
+
+        function hello() {
+            let obj = {
+                firstname: "hello",
+                lastname: "13345",
+                age: 23
+            }
+
+
+            document.getElementById("demo").innerHTML = "FIRST NAME IS : " + obj.firstname + "<br>" + "LAST NAME IS : " + obj.lastname + '<br>' + obj.age;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

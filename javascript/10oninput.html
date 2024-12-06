@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="parent">
+        <img src="download.jpg" alt="" height="200px">
+        <input type="text" name="" id="one" oninput="main()">
+        <input type="text" name="" id="tot1" readonly>
+    </div>
+
+
+    <div>
+        <h1>TOTAL NOTES  <span id="notes"></span> </h1>
+    </div>
+
+
+
+    <button onclick="print()">PRINT</button>
+
+
+
+    <script>
+        function main() {
+
+
+            let note1 = 2000;
+            let a = document.getElementById("one").value;
+
+           document.getElementById("tot1").value = note1 * a;
+
+           document.getElementById("notes").innerHTML = a;
+        }
+    </script>
+</body>
+
+</html>

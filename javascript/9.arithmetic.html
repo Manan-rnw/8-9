@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+        }
+
+        .cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button {
+            border: solid 2px black;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="cart">
+
+        <div>
+            <img src="../css/images/1.jpeg" alt="" height="50px">
+        </div>
+
+        <div>
+            <H2>prize : 50</H2>
+        </div>
+        <div class="cart">
+            <button onclick="add()">+</button>
+            <P id="demo"></P>
+            <button onclick="sub()">-</button>
+        </div>
+
+        <div>
+            <p>total prize is : <span id="tot"></span> </p>
+        </div>
+    </div>
+
+
+    <div class="cart">
+
+        <div>
+            <img src="../css/images/1.jpeg" alt="" height="50px">
+        </div>
+
+        <div>
+            <H2>prize : 100</H2>
+        </div>
+        <div class="cart">
+            <button onclick="add1()">+</button>
+            <P id="demo1"></P>
+            <button onclick="sub1()">-</button>
+        </div>
+
+        <div>
+            <p>total prize is : <span id="tot1"></span> </p>
+        </div>
+
+
+        <br>
+
+    </div>
+
+
+
+    <button onclick="tot()">TOTAL</button>
+    <p>TOTAL IS : <span id="total"></span></p>
+    <script>
+
+        let a = 0;
+        let b = 0;
+
+
+        let product1 = 50;
+        let product2 = 100;
+
+        function add() {
+
+            document.getElementById("demo").innerHTML = ++a;
+            let p = document.getElementById("tot").innerHTML = a * product1;
+
+            updatetotal()
+        }
+
+
+        function sub() {
+
+            document.getElementById("demo").innerHTML = --a;
+            let p = document.getElementById("tot").innerHTML = a * product1;
+            updatetotal()
+        }
+
+        function add1() {
+
+            document.getElementById("demo1").innerHTML = ++b;
+            let q = document.getElementById("tot1").innerHTML = b * product2;
+            updatetotal()
+        }
+
+
+        function sub1() {
+            if (b > 0) {
+                document.getElementById("demo1").innerHTML = --b;
+                let q = document.getElementById("tot1").innerHTML = b * product2;
+            }
+            updatetotal()
+        }
+
+        function updatetotal() {
+            let finalvalue = (a * product1) + (b * product2);
+            document.getElementById("total").innerHTML = finalvalue;
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

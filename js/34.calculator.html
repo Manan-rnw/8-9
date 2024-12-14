@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    SUB 1 <input type="text" id="one">
+
+    <br>
+    SUB 2 <input type="text" id="two">
+    <br>
+
+    SUB 3 <input type="text" id="three">
+
+    <br>
+    SUB 4 <input type="text" id="four">
+    <br>
+
+
+    <br>
+    <br>
+
+    <h1><span id="total"></span>/200</h1>
+
+    <P> <span id="per"></span>%100</P>
+
+    <button onclick="addition()">result</button>
+
+
+    <script>
+
+        let a = document.getElementById("one");
+        let b = document.getElementById("two");
+
+        let c = document.getElementById("three");
+        let d = document.getElementById("four");
+
+        function addition() {
+            let tot1 = Number(a.value) + Number(b.value) + Number(c.value) + Number(d.value);
+
+            let tot = document.getElementById("total").innerHTML = tot1;
+            document.getElementById("per").innerHTML = tot / 200 * 100;
+         
+        }
+    </script>
+</body>
+
+</html>

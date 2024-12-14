@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Dates</h1>
+<h2>The getTime() Method</h2>
+
+<p>Calculate the number of years since January 1, 1970:</p>
+
+<p id="demo"></p>
+
+<script>
+// Calculate milliseconds in a year
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const month = day * 30.45;
+const year = day * 365;
+
+
+// Divide Time with a year
+const d = new Date();
+let years = Math.round(d.getTime() / day);
+
+document.getElementById("demo").innerHTML = years;
+</script>
+
+</body>
+</html>
+
+<!-- 
+mili sec   1000
+sec 60 
+
+min = 1000 * 60; 
+hours = min * 60;
+day = hours * 24;
+week = day * 7;
+month = week * 4;
+year = day * 365;
+
+-->

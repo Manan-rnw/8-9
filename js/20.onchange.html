@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="main" onchange="demo()">
+        <option value="null"></option>
+        <option value="ORANGE">ORANGE</option>
+        <option value="MANGO">MANGO</option>
+        <option value="APPLE">APPLE</option>
+        <option value="PINEAPPLE">PINEAPPLE</option>
+        <option value="WATERMELON">WATERMELON</option>
+    </select>
+
+    <h1 id="abc"></h1>
+
+    <script>
+        function demo() {
+            let a = document.getElementById("main").value;
+
+            document.getElementById("abc").innerHTML = "SELECTED FRUIT ARE : " +  a;
+        }
+    </script>
+</body>
+</html>

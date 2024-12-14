@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<STYle>
+    div {
+        height: 200px;
+        width: 200px;
+        border: solid 2px black;
+    } 
+    input {
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+</STYle>
+<body>
+    <div>
+        <p>ENTER OTP HERE</p>
+        <input type="password" placeholder="ENTER OTP HERE" name="" id="demo1">
+        <p id="demo"></p>
+        <br>
+        <button id="btn">click here</button>
+    </div>
+  
+
+
+    <script>
+     
+
+     document.getElementById("demo").innerHTML = "enter otp in 1 min";
+
+
+        setTimeout(() => {
+            document.getElementById("btn").style.display = "none";
+
+             document.getElementById("demo1").style.display = "none";
+            document.getElementById("demo").innerHTML = "TIME OUT";
+
+
+        },1000)
+    </script>
+</body>
+
+</html>

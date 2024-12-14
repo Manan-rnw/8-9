@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="demo"></h1>
+
+    <script>
+        var d = new Date().getDay();
+
+        switch (d) {
+            case 0:
+                document.getElementById("demo").innerHTML = "SUNDAY";
+                break;
+            case 1:
+                document.getElementById("demo").innerHTML = "MONDAY";
+                break;
+            case 2:
+                document.getElementById("demo").innerHTML = "TUESDAY";
+                break;
+            case 3:
+                document.getElementById("demo").innerHTML = "WEDNESDAY";
+                break;
+            case 4:
+                document.getElementById("demo").innerHTML = "THURSDAY";
+                break;
+            case 5:
+                document.getElementById("demo").innerHTML = "FRIDAY";
+                break;
+            case 6:
+                document.getElementById("demo").innerHTML = "SATURDAY";
+                break;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="1.jpg" alt="">
+    <input type="text" name="" id="two" oninput="one()">
+    <input type="text" name="" id="total">
+    <br>
+    <br>
+
+    <input type="text" name="" id="three" oninput="one()" >
+    <input type="text" name="" id="four" oninput="one()">
+    <input type="text" name="" id="totall">
+
+
+    <br>
+    <br>
+    <h1>TOTAL NOTES : <SPAN id="notes"></SPAN></h1>
+    <h1 >TOTAL RUPEES : <span id="main"></span></h1>
+
+    <script>
+        function one() {
+
+          //  let a = document.getElementById("one").value;
+            let b = document.getElementById("two").value;
+           // let c = document.getElementById("three").value;
+            let d = document.getElementById("four").value;
+ 
+          let tot1 =  document.getElementById("total").value = 2000 * b;
+          let tot2 =  document.getElementById("totall").value = 500 * d;
+
+        
+          let not = Number(b) + Number(d);
+          document.getElementById("notes").innerHTML =  not;
+
+            document.getElementById("main").innerHTML =  tot1 + tot2;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="calculatrr.html" onsubmit="return main()">
+        FIRST NAME : <input type="text" name="" id="one">
+        <br>
+        LAST NAME : <input type="text" name="" id="two">
+        <br>
+        <input type="submit">
+
+    </form>
+
+    <h1 id="demo"></h1>
+
+    <script>
+        function main() {
+            let a = document.getElementById("one").value;
+            let b = document.getElementById("two").value;
+
+            if (a && b) {
+                document.getElementById("demo").innerHTML = "correct";
+            }
+
+            else {
+                document.getElementById("demo").innerHTML = "incorrect";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

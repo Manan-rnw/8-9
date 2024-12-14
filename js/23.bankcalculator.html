@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    input {
+        background:  linear-gradient(to right , red , blue , pink, aqua);
+        background-clip: text;
+        color: transparent;
+        border: solid 3px;
+        outline: none;
+        border-image: linear-gradient(to right , red , blue , pink, aqua) 1;
+    }
+
+    h1 {
+        background:  linear-gradient(to right , red , blue , pink, aqua);
+        background-clip: text;
+        color: transparent;
+    }
+</style>
+
+<body>
+
+    <h1>I AM HEADING</h1>
+
+    <img src="2000.jpg"   height="50px">
+    x
+    <input type="text" oninput="abc()" id="two"> =
+      
+    <input type="text" id="demo">
+
+
+    <br>
+    
+    <br>
+    
+    <br>
+    
+    <br>
+
+
+    <input type="text" value="1000" disabled id="three">
+    x
+    <input type="text" oninput="abc()" id="four"> =
+
+    <input type="text" id="demo1"> 
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="text" id="total">
+
+
+
+    <script>
+        function abc() {
+            let a = 2000;
+            let b = document.getElementById("two").value;
+            let c = document.getElementById("three").value;
+            let d = document.getElementById("four").value;
+
+            let tot1 = document.getElementById("demo").value = a * b; 
+            let tot2 = document.getElementById("demo1").value = c * d;
+
+            let total = document.getElementById("total").value = tot1 + tot2;
+            
+        }
+    </script>
+</body>
+
+</html>

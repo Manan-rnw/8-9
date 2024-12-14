@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ENTER VALUE ONE</th>
+            <th><input type="text" id="one"></th>
+        </tr>
+
+        <tr>
+            <th>ENTER VALUE TWO</th>
+            <th><input type="text" id="two"></th>
+        </tr>
+        <tr>
+            <th>TOTAL</th>
+            <th><input type="text" id="total"></th>
+        </tr>
+
+        <tr>
+            <th>
+                <button onclick="add()">ADDITION</button>
+                <button onclick="sub()">subtraction</button>
+
+            </th>
+
+            <th>
+                <button onclick="div()">division</button>
+                <button onclick="mul()">multiplication</button>
+
+            </th>
+        </tr>
+    </table>
+
+    <script>
+        function add() {
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+            let total = document.getElementById("total");
+
+            let a = Number(one.value) + Number(two.value);
+
+            document.getElementById("total").value = a;
+
+
+        }
+
+
+        function sub() {
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+            let total = document.getElementById("total");
+
+            let a = Number(one.value) - Number(two.value);
+
+            document.getElementById("total").value = a;
+
+        }
+
+        function div() {
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+            let total = document.getElementById("total");
+
+            let a = Number(one.value) / Number(two.value);
+
+            document.getElementById("total").value = a;
+
+        }
+
+        function mul() {
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+            let total = document.getElementById("total");
+
+            let a = Number(one.value) * Number(two.value);
+
+            document.getElementById("total").value = a;
+
+        }
+    </script>
+</body>
+
+</html>

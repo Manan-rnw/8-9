@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" name="" id="one">
+    <br>
+    <br>
+    <input type="password" name="" id="two">
+
+    <br>
+    <br>
+    <button onclick="main()">login</button>
+
+    <br> 
+    <h1 id="result"></h1>
+
+    <script>
+        function main() {
+            let a = document.getElementById("one").value;
+            let b = document.getElementById("two").value;
+
+            if(a && b && a === b) {
+                document.getElementById("result").innerHTML = "correct";
+            } 
+            else {
+                document.getElementById("result").innerHTML = "INcorrect";
+            }
+        }
+    </script>
+
+</body>
+</html>

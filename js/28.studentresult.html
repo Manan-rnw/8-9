@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    input {
+        border: none;
+        border-bottom: solid 2px black;
+        outline: none;
+    }
+</style>
+
+<body>
+    <form action="">
+        ENTER STUDENT NAME : <input type="text" name="" id="sname" oninput="one()" required pattern="[a-zA-Z]{1,}">
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <table border="2" cellspacing="0" cellpadding="0">
+
+        <tr>
+            <td colspan="4">STUDENT NAME : <span id="s-name"></span></td>
+        </tr>
+        <tr>
+
+            <td>SUBJECT</td>
+            <td>SESSIONAL (30)</td>
+            <td>FINAL (70)</td>
+            <td>TOTAL</td>
+        </tr>
+
+        <tr>
+
+            <td>
+                MATHS
+            </td>
+            <td>
+                <input type="number" oninput="one()" id="sub-1">
+            </td>
+            <td>
+                <input type="number" oninput="one()" id="sub-2">
+
+            </td>
+            <th id="sub-total"></th>
+        </tr>
+
+        <tr>
+
+            <td>
+                SCIENCE
+            </td>
+            <td>
+                <input type="number" oninput="one()" id="sub-3">
+            </td>
+            <td>
+                <input type="number" oninput="one()" id="sub-4">
+
+            </td>
+            <th id="sub-total-2"></th>
+        </tr>
+
+
+        <tr>
+            <td colspan="3">TOTAL MARKS OBTAIN : </td>
+            <th id="gtot" oninput="one()"></th>
+        </tr>
+
+
+        <tr>
+            <td colspan="3">TOTAL PERCENTAGE : </td>
+            <th id="per" oninput="one()"></th>
+        </tr>
+
+        <tr>
+            <td colspan="3"> PASS OR FAIL</td>
+            <th id="result" oninput="one()"></th>
+        </tr>
+
+        <tr>
+            <td colspan="3"> GRADE</td>
+            <th oninput="one()"></th>
+        </tr>
+    </table>
+
+
+    <button onclick="print()">PRINT</button>
+
+
+    <script>
+   
+
+        function one() {
+
+            let sname = document.getElementById("sname").value;
+
+            document.getElementById("s-name").innerHTML = sname;
+            let a = document.getElementById("sub-1");
+            let b = document.getElementById("sub-2");
+            let c = document.getElementById("sub-3");
+            let d = document.getElementById("sub-4");
+
+
+            let tot1 = Number(a.value) + Number(b.value);
+            let tot2 = Number(c.value) + Number(d.value);
+
+            document.getElementById("sub-total").innerHTML = tot1;
+            document.getElementById("sub-total-2").innerHTML = tot2;
+
+            let gtotal = document.getElementById("gtot").innerHTML = tot1 + tot2;
+
+
+            let totper = Number(gtotal / 200) * 100;
+            document.getElementById("per").innerHTML = totper + "%";
+
+
+            if (totper > 100) {
+                document.getElementById("result").innerHTML = "invalid";
+                document.getElementById("result").style.color = "red"
+            }
+
+            else if (totper > 40) {
+                document.getElementById("result").innerHTML = "PASS";
+                document.getElementById("result").style.color = "green"
+
+            }
+
+            else {
+                document.getElementById("result").innerHTML = "FAIL";
+                document.getElementById("result").style.color = "red"
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>
